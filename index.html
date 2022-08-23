@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <input style="height: 50px ;width:250px ; " type="number" id="year" placeholder="text year that you want to check please">
+    <input style="height:50px ; width:250px ; border-radius: 5px;" type="button" onclick="leap_year()" value="check">
+    <p id="info"></p>
+</head>
+<body>
+    <script>
+        function leap_year() {
+            var y = document.getElementById("year").value * 1;
+            console.log(y)
+            if (y % 4 === 0 && y % 100 != 0 ) {
+                document.getElementById("info").innerHTML = y + " " + "is a leapyear"
+            } else {
+                document.getElementById("info").innerHTML = y + " " + "is not a leapyear"
+            }
+        }
+    </script>
+</body>
+</html>
